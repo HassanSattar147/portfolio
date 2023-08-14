@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --primary-color:#42446E;
+    --secondary-color:linear-gradient(90deg, #13B0F5 2.60%, #E70FAA 100%);
+    --text-color:#666666;
+    --background-color:#fff;
+    --black-color:#000;
+    --card-background:#fff;
+
+    /* dark Mode */
+    /* --primary-color:#fff;
+    --secondary-color:linear-gradient(90deg, #13B0F5 2.60%, #E70FAA 100%);
+    --text-color:#fff;
+    --background-color:#000;
+    --black-color:#000; */
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+   font-family: "Poppins";
+   font-size: 62.5%;
+   background-color: var(--background-color);
+   transition: background .5s ease-in-out;
+}
+a{
+  transition: all 0.3s;
+}
+a:hover{
+  background:linear-gradient(90deg, #13B0F5 2.60%, #E70FAA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.wrapper__container{
+    width: 100%;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0 2rem 0;
+    position: relative;
+}
+.header #humberger-btn{
+  font-size: 40px;
+  display: none;
+  cursor: pointer;
+}
+.header .log img{
+    width: 5rem;
+    height: 2rem;
+}
+.menu{
+    display: flex;
+    gap: 3rem;
+    transition: all 0.5s ease;
+}
+.header .menu a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.right-menu{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.dark-mod-btn{
+  width: 70px;
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid var(--text-color);
+  background: white;
+  transition: all .5s;
+  cursor: pointer;
+}
+.circle-btn{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: orange;
+  left: 5px;
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  transition: all .3s ;
+
+}
+.circle-btn .btn-icon{
+  width: 15px;
+  transition: all 0.5s;
+}
+.switch{
+  left: 42px !important;
+  background-color: white;
+}
+
+/* ----------------Home section-------------- */
+.home__section{
+    width: 100%;
+    height: calc(100vh - 12rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home__section .text h1{
+    color: var(--primary-color);
+    font-size: 54px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+.home__section .text h1 span{
+    background: linear-gradient(90deg, #13B0F5 2.60%, #E70FAA 100%);
+    display: block;
+    background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.home__section .image .circle {
+  width: 370px;
+  height: 370px;
+  border-radius: 50%;
+  border: 6px solid transparent;
+  background: linear-gradient(to right, #E70FAA, #00C0FD);
+  background-clip: padding-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .home__section .image .circle div{
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+  }
+  .home__section .image .circle div img{
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  /* -----------------About Section------------- */
+  .about{
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    margin: 20px 0;
+    height: 100vh;
+  }
+  .about .about-text{
+    width: 100%;text-align: center;
+  }
+  .about .about-text p{
+    color: var(--text-color);
+    font-size: 19px;
+    text-align: justify;
+    margin-top: 20px;
+  }
+  .about .about-text h3{
+    color: var(--primary-color);
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  
+  /* --------------------Tech Section------------------ */
+  .tech-technology{
+    width: 100%;
+    padding: 40px 0;
+  }
+  .tech-technology .tech-title{
+    text-align: center;
+  }
+  .tech-technology .tech-title h3{
+    color: var(--primary-color);
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .tech-technology .tech-title p{
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--text-color);
+  }
+  .tech-technology .tech-logo{
+    margin: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .tech-technology .tech-logo div{
+    width: 16%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .tech-technology .tech-logo img{
+    width: 110px;
+    height: 110px;
+  }
+  .express-icon{
+    object-fit: cover;
+  }
+  .rest-api-icon{
+    object-fit: cover;
+  }
+  .figma-icon{object-fit: cover;}
+
+  /* ---------------------Project Section-------------- */
+  .projects__section{
+    width: 100%;
+    padding: 40px 0;
+  }
+  .projects__section .project__title{
+    text-align: center;
+    padding-top: 40px;
+  }
+  .projects__section .project__title h3{
+    color: var(--primary-color);
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .projects__section .project__title p{
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--text-color);
+  }
+  .projects__section .projects{
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    padding-bottom: 40px;
+  }
+  .projects__section .projects .card{
+    width: 31%;
+    min-width: 339px;
+    border-radius: 20px;
+    background: var(--card-background);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.20);
+    margin-bottom: 20px;
+    flex-shrink: 0;
+    transition: all .2s;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .projects__section .projects .card:hover{
+    transform: scale(1.02);
+  }
+  .projects .card .card-image{
+    width: 100%;
+  }
+  .projects .card .card-image img{
+    width: 100%;
+  }
+  .card .card-body{
+    padding: 10px 20px 20px 20px;
+    width: 100%;
+  }
+  .card .card-title{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .card .card-desc{
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 8px;
+  }
+  .card .card-desc .tech{
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+  .card .card-desc .tech span{
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .card .card-footer{
+    padding: 0 20px 20px 20px;
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    gap: 40px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .card .card-footer a{
+    color: var(--black-color);
+  }
+  .card .card-footer .live-preview{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .card .card-footer .view-code{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* -----------Contact US ------------*/
+  .contact-us{
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    border-bottom: 2px solid var(--text-color);
+  }
+  .contact-menu{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 18px;
+    font-weight: 400;
+
+  }
+  .contact-menu a{
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+
+  /* -----------Footer Section----------- */
+  .footer{
+    width: 100%;
+    display: flex;
+    padding: 40px 0;
+    justify-content: space-between;
+    gap: 20px;
+    border-top: 2px solid var(--text-color);
+    align-items: center;
+    margin-top: 120px;
+  }
+  .footer-menu {
+    display: flex;
+    gap: 25px;
+  }
+  .footer-menu a{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  .footer p{
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  .footer p span.dev-name{
+    background: var(--gradient-heading, linear-gradient(90deg, #13B0F5 2.60%, #E70FAA 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .footer p span.pink{
+    color: #E70FAA;
+  }
+  .upwork-icon{
+    width: 100px;
+  }
+  .logo{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+
+  /* ---------Media Queries----------- */
+
+  @media screen and (max-width:1365px) {
+    .projects__section .projects .card{
+      width: 48%;
+    }
+  }
+
+  @media screen and (max-width:1180px) {
+    .footer{
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 50px;
+    }
+   
+  }
+
+  @media screen and (max-width:1092px) {
+    .header{
+      align-items: center;
+    }
+    .menu{
+      position: absolute;
+      width: 100%;
+      height: 0;
+      background: linear-gradient(-45deg, #00C0FD, #E70FAA);;
+     flex-direction: column;
+      top: 4rem;
+      left: 0;
+      gap: 0;
+      align-items: center;
+      display: none;
+      overflow-y: hidden;
+      transition: all 0.3s;
+    }
+    .dark-mod-btn{
+      justify-self: flex-end;
+    }
+    .header .menu a{
+      padding: 10px 0;
+      color: #FFF;
+    }
+    .openMenu{
+      display: flex !important;
+      height: 300px !important;
+      padding: 10px;
+    }
+    .header #humberger-btn{
+      display: block;
+    }
+    .home__section .text h1{
+      font-size: 45px;
+    }
+    .right-menu{
+      gap: 15px;
+    }
+  }
+
+  @media screen and (max-width:1070px) {
+    .about .about-text{
+      width: 50%;
+    }
+  }
+  @media screen and (max-width:865px) {
+    .header{
+      margin: 20px 0 10px 0;
+      height: 4rem;
+    }
+    .home__section{
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: flex-end;
+      margin-bottom: 300px;
+      margin-top: 0px;
+    }
+    .home__section .text{
+      margin-top: 40px;
+      text-align: center;
+      
+    }
+    .home__section .text h1{
+      font-size: 45px;
+    }
+    .home__section .image img{
+      width: 350px;
+    }
+    .about{
+      flex-direction: column;
+      margin-bottom: 0px;
+      margin-top: 500px;
+    }
+    .about .about-text{
+      width: 100%;text-align: center;
+    }
+    .tech-technology .tech-logo div{
+      width: 30%;
+      text-align: center;
+    }
+    .projects__section .projects .card{
+      width: 80%;
+      margin: 0 auto;
+      border-radius: 30px;
+      margin-bottom: 20px;
+    }
+    .contact-us{
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+    }
+    .contact-us .contact-menu{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .footer p{
+      text-align: center;
+    }
+    .tech-technology{
+      padding: 150px 0 20px 0;
+    }
+
+  }
+
+  @media screen and (max-width:532px) {
+    .container{
+      width: 100%;
+      padding: 0 20px;
+    }
+    .contact-us{
+     flex-direction: column;
+     gap: 45px;
+     padding-top: 10px;
+      
+    }
+    .contact-us .contact-menu{
+      gap: 20px;
+      align-items: center;
+    }
+    .projects__section .projects .card{
+      width: 100%;
+    }
+    .footer .footer-menu{
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      width: 80%;
+      margin: 0 auto;
+    }
+    .footer .footer-menu a{
+      width: 46%;
+    }
+  }
