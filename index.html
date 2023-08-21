@@ -6,7 +6,7 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="./assets/favicon/Favicon_JPEG-02.jpg"
+      href="./assets/favicon/Favicon_PNG-02.png"
     />
     <!-- css file -->
     <link rel="stylesheet" href="./css/styles.css" />
@@ -16,34 +16,39 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <title>Hassan Sattar - Professional Web Developer and Designer</title>
+    <title>Hassan Sattar</title>
   </head>
+
   <body>
+    <div id="loader"></div>
+
     <div class="wrapper__container">
       <div class="container">
-        <header class="header">
+        <header class="header" id="home">
           <div class="logo">
-            <a href="#home">
-              <img
-                src="./assets/favicon/Favicon_SVG-01.svg"
-                width="100px"
-                height="100px"
-                alt=""
-              />
-            </a>
+            <img
+              src="./assets/favicon/Favicon_SVG-01.svg"
+              width="100px"
+              height="100px"
+              alt=""
+            />
           </div>
           <div class="right-menu">
             <nav class="menu" id="menu">
-              <a href="#home" class="menu-link">Home</a>
-              <a href="#about" class="menu-link">About</a>
-              <a href="#tech-technology" class="menu-link">Teck Stack</a>
+              <a href="#about" class="menu-link">About me</a>
+              <a href="#tech-technology" class="menu-link">My Tech Stack</a>
               <a href="#projects" class="menu-link">Projects</a>
-              <a href="#footer" class="menu-link">Contact</a>
+              <a
+                href="https://www.upwork.com/freelancers/~0161b28613c732a09b"
+                target="_blank"
+                class="menu-link"
+                >Upwork</a
+              >
             </nav>
+
             <div class="dark-mode-switch">
               <div class="dark-mod-btn">
                 <div class="circle-btn">
-                  <!-- <i class="fa-solid fa-sun"></i> -->
                   <img src="./assets/sun.svg" alt="" class="btn-icon sun" />
                 </div>
               </div>
@@ -51,7 +56,7 @@
             <i class="fa-solid fa-bars" id="humberger-btn"></i>
           </div>
         </header>
-        <section class="home__section" id="home">
+        <section class="home__section">
           <div class="text">
             <h1>
               Hi 👋,<br />
@@ -64,237 +69,343 @@
               <div>
                 <img src="./assets/Hassan_Sattar_-_sqr.jpg" alt="" />
               </div>
-              <!-- <img src="./assets/profile-img.png" alt="" /> -->
+              <!-- <img src="/assets/profile-img.png" alt="" /> -->
             </div>
           </div>
         </section>
-        <ssection class="about" id="about">
-          <div class="about-text">
-            <div class="about-title">
-              <h3>About me</h3>
-            </div>
-            <p>
-              I am a highly skilled and approachable full-stack web developer
-              and designer, dedicated to delivering exceptional results tailored
-              to your specific needs. Whether you require a website built from
-              the ground up or a comprehensive redesign, I have the expertise to
-              bring your vision to life.
-              <br />
-              My primary objective is to ensure your absolute satisfaction with
-              every aspect of my work. My process involves meticulous design,
-              coding, testing, and optimization to guarantee a polished end
-              product.
-            </p>
-          </div>
-        </ssection>
-        <section class="tech-technology" id="tech-technology">
-          <div class="tech-title">
-            <h3>My Tech Stack</h3>
-            <p>Technologies I’ve been working with recently</p>
-          </div>
-          <div class="tech-logo">
-            <div><img src="./assets/html-icon.svg" alt="" /></div>
-            <div><img src="./assets/css-icon.svg" alt="" /></div>
-            <div><img src="./assets/js-icon.svg" alt="" /></div>
-            <div><img src="./assets/react-icon.svg" alt="" /></div>
-            <div><img src="./assets/Vectors.svg" alt="" /></div>
-            <div><img src="./assets/bootstrap5.png" alt="" /></div>
-            <div><img src="./assets/twailwind-icon.svg" alt="" /></div>
-            <div><img src="./assets/sass-icon.svg" alt="" /></div>
-            <div>
-              <img src="./assets/materializ-css.png" alt="" />
-            </div>
-            <div>
-              <img src="./assets/cib_greensock.svg" alt="" class="green-icon" />
-            </div>
-            <div>
-              <img src="./assets/rest-api.jpeg" alt="" class="rest-api-icon" />
-            </div>
-            <div>
-              <img
-                src="./assets/akar-icons_github-fill.svg"
-                alt=""
-                class="github-icon"
-              />
-            </div>
-            <div><img src="./assets/semantic.png" alt="" /></div>
-            <div>
-              <img src="./assets/download.png" alt="" />
-            </div>
-            <div>
-              <img src="./assets/nodejs-seeklogo.com.svg" alt="" />
-            </div>
-            <div>
-              <img
-                src="./assets/expressjs_logo.png"
-                alt=""
-                class="express-icon"
-              />
-            </div>
-            <div>
-              <img src="./assets/mongodb-seeklogo.com.svg" alt="" />
-            </div>
-            <div>
-              <img src="./assets/mongoose-1-logo-svg-vector.svg" alt="" />
-            </div>
-            <div>
-              <img src="./assets/next-js-seeklogo.com.svg" alt="" />
-            </div>
-            <div>
-              <img
-                src="./assets/640px-Figma-1-logo.png"
-                alt=""
-                class="figma-icon"
-              />
-            </div>
-            <div>
-              <img
-                src="./assets/png-transparent-adobe-illustrator-logo-tech-companies-thumbnail.png"
-                alt=""
-                class="figma-icon"
-              />
-            </div>
-            <div>
-              <img src="./assets/adobe-xd-icon.png" />
+        <section class="about-container" id="about">
+          <div class="about">
+            <div class="about-text">
+              <div class="about-title">
+                <h3>About me</h3>
+              </div>
+              <p>
+                I am a highly skilled and approachable full-stack web developer
+                and designer, dedicated to delivering exceptional results
+                tailored to your specific needs. Whether you require a website
+                built from the ground up or a comprehensive redesign, I have the
+                expertise to bring your vision to life.
+                <br />
+                <br />
+                My primary objective is to ensure your absolute satisfaction
+                with every aspect of my work. My process involves meticulous
+                design, coding, testing, and optimization to guarantee a
+                polished end product.
+              </p>
             </div>
           </div>
         </section>
-        <scetion class="projects__section" id="projects">
-          <div class="project__title">
-            <h3>Projects</h3>
-            <p>Things I’ve built so far</p>
-          </div>
-          <div class="projects">
-            <div class="card">
-              <div class="card-image">
-                <img src="./assets/Rectangle 4.svg" alt="" />
-              </div>
-              <div class="card-body">
-                <div class="card-title">Project Tile goes here</div>
-                <div class="card-desc">
-                  <p>
-                    This is sample project description random things are here in
-                    description This is sample project lorem ipsum generator for
-                    dummy content
-                  </p>
-                  <p class="tech">
-                    <span>Tech stack :</span> HTML , JavaScript, SASS, React
-                  </p>
-                </div>
-              </div>
+        <section class="tech-technology-container" id="tech-technology">
+          <div class="tech-technology">
+            <div class="tech-title">
+              <h3>My Tech Stack</h3>
+              <p>Technologies I&apos;ve been working with recently</p>
             </div>
-
-            <div class="card">
-              <div class="card-image">
-                <img src="./assets/Rectangle 6.svg" alt="" />
+            <div class="tech-logo">
+              <div title="HTML 5">
+                <img src="./assets/logo_html5.png" alt="" />
               </div>
-              <div class="card-body">
-                <div class="card-title">Project Tile goes here</div>
-                <div class="card-desc">
-                  <p>
-                    This is sample project description random things are here in
-                    description This is sample project lorem ipsum generator for
-                    dummy content
-                  </p>
-                  <p class="tech">
-                    <span>Tech stack :</span> HTML , JavaScript, SASS, React
-                  </p>
-                </div>
+              <div title="CSS 3">
+                <img src="./assets/logo_css3.png" alt="" />
               </div>
-            </div>
-
-            <div class="card">
-              <div class="card-image">
-                <img src="./assets/Rectangle 8.svg" alt="" />
+              <div title="Bootstrap 5">
+                <img src="./assets/logo_bs5.png" alt="" />
               </div>
-              <div class="card-body">
-                <div class="card-title">Project Tile goes here</div>
-                <div class="card-desc">
-                  <p>
-                    This is sample project description random things are here in
-                    description This is sample project lorem ipsum generator for
-                    dummy content
-                  </p>
-                  <p class="tech">
-                    <span>Tech stack :</span> HTML , JavaScript, SASS, React
-                  </p>
-                </div>
+              <div title="Materialise">
+                <img src="./assets/logo_materialise.png" alt="" />
               </div>
-            </div>
-
-            <div class="card">
-              <div class="card-image">
-                <img src="./assets/Rectangle 12.svg" alt="" />
+              <div title="Tailwind CSS">
+                <img src="./assets/logo_tailwind-css.png" alt="" />
               </div>
-              <div class="card-body">
-                <div class="card-title">Project Tile goes here</div>
-                <div class="card-desc">
-                  <p>
-                    This is sample project description random things are here in
-                    description This is sample project lorem ipsum generator for
-                    dummy content
-                  </p>
-                  <p class="tech">
-                    <span>Tech stack :</span> HTML , JavaScript, SASS, React
-                  </p>
-                </div>
+              <div title="Semantic UI CSS">
+                <img src="./assets/logo_sementic-ui.png" alt="" />
               </div>
-            </div>
-
-            <div class="card">
-              <div class="card-image">
-                <img src="./assets/Rectangle 13.svg" alt="" />
+              <div title="Syntactically Awesome Stylesheet (Sass)">
+                <img src="./assets/logo_sass.png" alt="" />
               </div>
-              <div class="card-body">
-                <div class="card-title">Project Tile goes here</div>
-                <div class="card-desc">
-                  <p>
-                    This is sample project description random things are here in
-                    description This is sample project lorem ipsum generator for
-                    dummy content
-                  </p>
-                  <p class="tech">
-                    <span>Tech stack :</span> HTML , JavaScript, SASS, React
-                  </p>
-                </div>
+              <div title="JavaScript">
+                <img src="./assets/logo_js.png" alt="" />
               </div>
-            </div>
-
-            <div class="card">
-              <div class="card-image">
-                <img src="./assets/Rectangle 14.svg" alt="" />
+              <div title="TypeScript">
+                <img src="./assets/logo_ts.png" alt="" />
               </div>
-              <div class="card-body">
-                <div class="card-title">Project Tile goes here</div>
-                <div class="card-desc">
-                  <p>
-                    This is sample project description random things are here in
-                    description This is sample project lorem ipsum generator for
-                    dummy content
-                  </p>
-                  <p class="tech">
-                    <span>Tech stack :</span> HTML , JavaScript, SASS, React
-                  </p>
-                </div>
+              <div title="React JS">
+                <img src="./assets/logo_react.png" alt="" />
+              </div>
+              <div title="Next JS">
+                <img src="./assets/logo_next.png" />
+              </div>
+              <div title="Redux">
+                <img src="./assets/logo_redux.png" alt="" />
+              </div>
+              <div title="GSAP">
+                <img src="./assets/logo_gsap.png" />
+              </div>
+              <div title="RESTful APIs">
+                <img src="./assets/logo_rest-api.png" />
+              </div>
+              <div title="Node JS">
+                <img src="./assets/logo_node-js.png" />
+              </div>
+              <div title="Express JS">
+                <img src="./assets/logo_express-js.png" alt="" />
+              </div>
+              <div title="Mongo DB">
+                <img src="./assets/logo_mongo-db.png" alt="" />
+              </div>
+              <div title="Mongoose ORM">
+                <img src="./assets/logo_mongoose.png" alt="" class="manod" />
+              </div>
+              <div title="Git">
+                <img src="./assets/logo_git.png" alt="" />
+              </div>
+              <div title="GitHub">
+                <img src="./assets/logo_github.png" />
+              </div>
+              <div title="GitLab">
+                <img src="./assets/logo_gitlab.png" />
+              </div>
+              <div title="Figma">
+                <img src="./assets/logo_figma.png" />
+              </div>
+              <div title="Adobe Illustrator">
+                <img src="./assets/logo_ai.png" />
+              </div>
+              <div title="Adobe Xd">
+                <img src="./assets/logo_xd.png" />
               </div>
             </div>
           </div>
-        </scetion>
+        </section>
+        <section class="projects__container" id="projects">
+          <div class="projects__section">
+            <div class="project__title">
+              <h3>Projects</h3>
+              <p>Things I&apos;ve built so far</p>
+            </div>
+            <div class="projects">
+              <div class="card">
+                <div class="card-header">
+                  <div
+                    class="card-image"
+                    style="
+                      background-image: url(./assets/projects/pet-animal.png);
+                    "
+                  ></div>
+                  <div class="card-body">
+                    <div class="card-title">Pet Home Shelter</div>
+                    <div class="card-desc">
+                      <p>
+                        This project is about Pet Home Shelter which is
+                        developed in html, sass and JavaScript which is fully
+                        responsive
+                      </p>
+                      <p class="tech">
+                        <span>Tech stack :</span> HTML , SASS, JavaScript
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a
+                    href="https://hassansattar147.github.io/pet-animal/"
+                    target="_blank"
+                    class="link"
+                  >
+                    <img
+                      src="./assets/akar-icons_link-chain.svg"
+                      alt=""
+                    />Preview Project
+                  </a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <div
+                    class="card-image"
+                    style="
+                      background-image: url(./assets/projects/ension-capital.png);
+                    "
+                  ></div>
+                  <div class="card-body">
+                    <div class="card-title">Envision Capital</div>
+                    <div class="card-desc">
+                      <p>
+                        This project is about Envision Capital which is
+                        developed in html, sass and JavaScript which is fully
+                        responsive
+                      </p>
+                      <p class="tech">
+                        <span>Tech stack :</span> HTML , SASS, JavaScript
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a
+                    href="https://hassansattar147.github.io/envision-capital/"
+                    target="_blank"
+                    class="link"
+                  >
+                    <img
+                      src="./assets/akar-icons_link-chain.svg"
+                      alt=""
+                    />Preview Project
+                  </a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <div
+                    class="card-image"
+                    style="
+                      background-image: url(./assets/projects/travel-busses.png);
+                    "
+                  ></div>
+                  <div class="card-body">
+                    <div class="card-title">The Box</div>
+                    <div class="card-desc">
+                      <p>
+                        This project is about Travel Buses which is developed in
+                        html, sass and JavaScript which is fully responsive
+                      </p>
+                      <p class="tech">
+                        <span>Tech stack :</span> HTML , SASS, JavaScript
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a
+                    href="https://hassansattar147.github.io/the-box/"
+                    target="_blank"
+                    class="link"
+                  >
+                    <img
+                      src="./assets/akar-icons_link-chain.svg"
+                      alt=""
+                    />Preview Project
+                  </a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <div
+                    class="card-image"
+                    style="
+                      background-image: url(./assets/projects/pet-animal.png);
+                    "
+                  ></div>
+                  <div class="card-body">
+                    <div class="card-title">Flex Force</div>
+                    <div class="card-desc">
+                      <p>
+                        This project is about Flex Force which is developed in
+                        html, sass and JavaScript which is fully responsive
+                      </p>
+                      <p class="tech">
+                        <span>Tech stack :</span> HTML , SASS, JavaScript
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="link">
+                    <img
+                      src="./assets/akar-icons_link-chain.svg"
+                      alt=""
+                    />Preview Project
+                  </a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <div
+                    class="card-image"
+                    style="
+                      background-image: url(./assets/projects/pet-animal.png);
+                    "
+                  ></div>
+                  <div class="card-body">
+                    <div class="card-title">Pet Home Shelter</div>
+                    <div class="card-desc">
+                      <p>
+                        This project is about Pet Home Shelter which is
+                        developed in html, sass and JavaScript which is fully
+                        responsive
+                      </p>
+                      <p class="tech">
+                        <span>Tech stack :</span> HTML , SASS, JavaScript
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="link">
+                    <img
+                      src="./assets/akar-icons_link-chain.svg"
+                      alt=""
+                    />Preview Project
+                  </a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <div
+                    class="card-image"
+                    style="
+                      background-image: url(./assets/projects/pet-animal.png);
+                    "
+                  ></div>
+                  <div class="card-body">
+                    <div class="card-title">Pet Home Shelter</div>
+                    <div class="card-desc">
+                      <p>
+                        This project is about Pet Home Shelter which is
+                        developed in html, sass and JavaScript which is fully
+                        responsive
+                      </p>
+                      <p class="tech">
+                        <span>Tech stack :</span> HTML , SASS, JavaScript
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="link">
+                    <img
+                      src="./assets/akar-icons_link-chain.svg"
+                      alt=""
+                    />Preview Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <footer class="footer" id="footer">
           <nav class="footer-menu">
             <a href="#home">Home</a>
-            <a href="#">About</a>
+            <a href="#about">About</a>
             <a href="#tech-technology">Teck Stack</a>
             <a href="#projects">Projects</a>
-            <a href="#footer">Contact</a>
           </nav>
           <div class="logo">
             <a
               href="https://www.upwork.com/freelancers/~0161b28613c732a09b"
               target="_blank"
-              ><img src="./assets/upwork (2).svg" alt="" class="upwork-icon"
+              ><img
+                id="footer-upwork-icon"
+                src="./assets/upwork-black.svg"
+                alt=""
+                class="upwork-icon"
             /></a>
-            <a href="#home">
+            <a href="#home" id="t-logo">
               <img
                 src="./assets/favicon/Favicon_SVG-01.svg"
                 width="100px"
@@ -306,6 +417,7 @@
         </footer>
       </div>
     </div>
+
     <!-- JavaScript file -->
     <script src="./js/script.js"></script>
   </body>
