@@ -58,15 +58,17 @@ const handleDarkModeToggle = () => {
 dark_mod_btn_container.addEventListener("click", handleDarkModeToggle);
 
 window.onload = () => {
+  // return;
   const loader = document.getElementById('loader');
+  const body = document.querySelector('body');
+  
   loader.style.opacity = '0';
-
+  body.style.overflow = 'unset';
+  
+  
+  
   setTimeout(() => {
     loader.style.display = 'none'
   }, 1200);
 
 };
-
-
-
-
