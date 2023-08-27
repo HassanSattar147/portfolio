@@ -73,7 +73,7 @@ window.onload = () => {
 
 };
 
-const getProjectCard = (imgName, projectName, techStack, branchName) => {
+const getProjectCard = (imgName, projectName, projectDescription, branchName) => {
   return `<div class="card">
   <div class="card-header">
     <div
@@ -85,8 +85,8 @@ const getProjectCard = (imgName, projectName, techStack, branchName) => {
     <div class="card-body">
       <div class="card-title">${projectName}</div>
       <div class="card-desc">
-        <p class="tech">
-          <span>Tech stack:</span> ${techStack}
+        <p>
+          ${projectDescription}
         </p>
       </div>
     </div>
@@ -107,20 +107,20 @@ const getProjectCard = (imgName, projectName, techStack, branchName) => {
 }
 
 const projectsConfigs = [
-  { imgName: 'pet-animal', projectName: 'Pet Home Shelter', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'pet-animal' },
-  { imgName: 'fba-multitool', projectName: 'FBA Multitool', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'fba-multitool' },
-  { imgName: 'figma-land', projectName: 'Figma Land', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'figma-land' },
-  { imgName: 'tourism', projectName: 'Tourism', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'tourism' },
-  { imgName: 'ension-capital', projectName: 'Envision Capital', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'envision-capital' },
-  { imgName: 'travel-busses', projectName: 'The Box', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'the-box' },
-  { imgName: 'flex-force', projectName: 'Flex Force', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'flex-force' },
-  { imgName: 'light-theme', projectName: 'Two Themes Landing Page', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'themes-landing-page' },
-  { imgName: 'izzy-health', projectName: 'Izzy Health', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'izzy-health' },
+  { imgName: 'pet-animal', projectName: 'Pet Home Shelter', projectDescription: 'We have already saved the lives of 10,000 animals. We are not just a rescue, we are a refuge.', branchName: 'pet-animal' },
+  { imgName: 'fba-multitool', projectName: 'FBA Multitool', projectDescription: `1000's of Amazon sellers recommended this FBA software for there business. Don't miss out on this must have tool. `, branchName: 'fba-multitool' },
+  { imgName: 'figma-land', projectName: 'Figma Land', projectDescription: 'Most calendars are designed for teams. Figma Land is designed for freelancers.', branchName: 'figma-land' },
+  { imgName: 'tourism', projectName: 'Tourism', projectDescription: 'We always make our customers happy by providing as many choices as possible. ', branchName: 'tourism' },
+  { imgName: 'ension-capital', projectName: 'Envision Capital', projectDescription: 'You have an idea, IncuPie has a plan. We offer everything you need to go from an early-stage idea to a successful exchange listing.', branchName: 'envision-capital' },
+  { imgName: 'travel-busses', projectName: 'The Box', projectDescription: 'Along with reliability, we provide facilities such as warehouses, customer relations, inventory management, etc. ', branchName: 'the-box' },
+  { imgName: 'flex-force', projectName: 'Flex Force', projectDescription: 'Manifesting your imagination with our on-demand developer workforces. So, time to get it done!', branchName: 'flex-force' },
+  { imgName: 'light-theme', projectName: 'Two Themes Landing Page', projectDescription: ' We are an innovative global real estate investment management company unlike any other. ', branchName: 'themes-landing-page' },
+  { imgName: 'izzy-health', projectName: 'Izzy Health', projectDescription: 'We help you manage and protect you today and tomorrow. Protecting yourself and family is the key.', branchName: 'izzy-health' },
 ]
 
 const renderProjects = () => {
   const projectsContainer = document.getElementById('projectsContainer');
-  const allCards = projectsConfigs.map(({ imgName, projectName, techStack, branchName }) => getProjectCard(imgName, projectName, techStack, branchName)).join('\n');
+  const allCards = projectsConfigs.map(({ imgName, projectName, projectDescription, branchName }) => getProjectCard(imgName, projectName, projectDescription, branchName)).join('\n');
   projectsContainer.innerHTML = allCards;
 }
 
