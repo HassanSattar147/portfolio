@@ -111,7 +111,7 @@ const projectsConfigs = [
   { imgName: 'fba-multitool', projectName: 'FBA Multitool', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'fba-multitool' },
   { imgName: 'figma-land', projectName: 'Figma Land', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'figma-land' },
   { imgName: 'tourism', projectName: 'Tourism', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'tourism' },
-  { imgName: 'envision-capital', projectName: 'Envision Capital', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'envision-capital' },
+  { imgName: 'ension-capital', projectName: 'Envision Capital', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'envision-capital' },
   { imgName: 'travel-busses', projectName: 'The Box', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'the-box' },
   { imgName: 'flex-force', projectName: 'Flex Force', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'flex-force' },
   { imgName: 'light-theme', projectName: 'Two Themes Landing Page', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'themes-landing-page' },
