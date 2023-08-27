@@ -61,14 +61,67 @@ window.onload = () => {
   // return;
   const loader = document.getElementById('loader');
   const body = document.querySelector('body');
-  
+
   loader.style.opacity = '0';
   body.style.overflow = 'unset';
-  
-  
-  
+
+
+
   setTimeout(() => {
     loader.style.display = 'none'
   }, 1200);
 
 };
+
+const getProjectCard = (imgName, projectName, techStack, branchName) => {
+  return `<div class="card">
+  <div class="card-header">
+    <div
+      class="card-image"
+      style="
+        background-image: url(./assets/projects/${imgName}.jpg);
+      "
+    ></div>
+    <div class="card-body">
+      <div class="card-title">${projectName}</div>
+      <div class="card-desc">
+        <p class="tech">
+          <span>Tech stack:</span> ${techStack}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    <a
+      href="https://hassansattar147.github.io/${branchName}/"
+      target="_blank"
+      class="link"
+    >
+      <img
+        src="./assets/akar-icons_link-chain.svg"
+        alt=""
+      />Preview Project
+    </a>
+  </div>
+</div>`
+}
+
+const projectsConfigs = [
+  { imgName: 'pet-animal', projectName: 'Pet Home Shelter', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'pet-animal' },
+  { imgName: 'fba-multitool', projectName: 'FBA Multitool', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'fba-multitool' },
+  { imgName: 'figma-land', projectName: 'Figma Land', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'figma-land' },
+  { imgName: 'tourism', projectName: 'Tourism', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'tourism' },
+  { imgName: 'envision-capital', projectName: 'Envision Capital', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'envision-capital' },
+  { imgName: 'travel-busses', projectName: 'The Box', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'the-box' },
+  { imgName: 'flex-force', projectName: 'Flex Force', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'flex-force' },
+  { imgName: 'light-theme', projectName: 'Two Themes Landing Page', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'themes-landing-page' },
+  { imgName: 'izzy-health', projectName: 'Izzy Health', techStack: 'HTML, CSS, Sass, JavaScript', branchName: 'izzy-health' },
+]
+
+const renderProjects = () => {
+  const projectsContainer = document.getElementById('projectsContainer');
+  const allCards = projectsConfigs.map(({ imgName, projectName, techStack, branchName }) => getProjectCard(imgName, projectName, techStack, branchName)).join('\n');
+  projectsContainer.innerHTML = allCards;
+}
+
+renderProjects();
